@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Psychopat Test</string>
+    <string name="question_one">Question akan ditampilkan disini</string>
+    <string name="nextQuestion">Next</string>
+    <string name="your_answer">Kamu :</string>
+    <string name="correct_answer">Psikopat :</string>
+    <string name="score_text">Skor kamu &#160;</string>
+    <string name="score_text_append">&#160; dari &#160;</string>
+    <string name="no_answer_error">Apakah jawaban kamu?</string>
+    <string name="prevQuestion">Previous</string>
+    <string name="empty_view_string">Tidak ada soal yang ditandai</string>
+    <string name="review_button">Review List</string>
+    <string name="mark_for_review">tandai untuk review</string>
+    <string name="submit">Submit</string>
+    <string name="start">Mulai</string>
+    <string name="welcome_text">Apakah kamu berbakat menjadi Psikopat?</string>
+    <string name="results">Results</string>
+    <string name="review">Review</string>
+    <string name="submit_confirm">Apakah kamu ingin menyimpan jawaban?</string>
+    <string name="no_prev_question">Pertanyaan pertama</string>
+    <string name="exit_confirm">Jawaban akan hilang. Kamu yakin akan keluar ?</string>
+    <string name="confirm_yes">Ya</string>
+    <string name="confirm_cancel">Tidak</string>
+
+    <string name="q1">Apakah Anda merupakan seseorang yang selalu membuat perencanaan atau lebih menyukai sesuatu secara spontan?</string>
+    <string name="q2">Ketika dihadapkan dengan sebuah situasi yang sulit, apakah Anda mampu bertahan atau menyerah karena tertekan?</string>
+    <string name="q3">Ketika dihadapkan dengan situasi yang berbahaya, apakah yang akan Anda lakukan?</string>
+    <string name="q4">Diantara merah dan putih, warna apakah yang akan Anda pilih?</string>
+    <string name="q5">Ketika bertemu dengan seseorang yang sangat Anda sukai, apa yang akan Anda lakukan pertama kali padanya?</string>
+    <string name="q6">Ketika Anda memiliki tetangga yang sering tidak terlihat dan mengurung diri di dalam rumah, hal apa yang terlintas di benak Anda?</string>
+    <string name="q7">Hal apakah yang Anda pilih berikut ini : berkelahi, kenakalan, sikap brutal, pornografi?</string>
+    <string name="q8">Ketika melihat foto prajurit yang telah memenangkan peperangan, tentu ada beberapa bagian tubuh yang terluka ketika terjadi peperangan tersebut. Bagian tubuh manakah yang menurut Anda paling mungkin untuk terkena serangan pertama kali?</string>
+    <string name="q9">Suatu ketika rumah Anda dimasuki oleh pencuri, untuk mempertahankan diri dan melawan pencuri tersebut, Anda mengambil pisau. Pisau apakah yang Anda pilih : pisau dapur yang tajam atau pisau buah yang tidak tajam?</string>
+    <string name="q10">Ketika Anda melihat sebuah film dan tokoh utama harus melawan seseorang penjahat yang sedang melarikan diri dan bersembunyi di bawah tempat tidur, apa yang Anda pikir akan dilakukan oleh tokoh tersebut?</string>
+
+
+    <string name="q1_option1">Menyukai perencanaan</string>
+    <string name="q1_option2">Spontan</string>
+    <array name="q1_options">
+        <item>@string/q1_option1</item>
+        <item>@string/q1_option2</item>
+    </array>
+
+    <string name="q2_option1">Mampu bertahan</string>
+    <string name="q2_option2">Menyerah karena tertekan</string>
+    <array name="q2_options">
+        <item>@string/q2_option1</item>
+        <item>@string/q2_option2</item>
+    </array>
+
+    <string name="q3_option1">Membuat keputusan dengan cepat</string>
+    <string name="q3_option2">Meminta bantuan orang lain </string>
+    <array name="q3_options">
+        <item>@string/q3_option1</item>
+        <item>@string/q3_option2</item>
+    </array>
+
+    <string name="q4_option1">Warna merah</string>
+    <string name="q4_option2">Warna putih</string>
+    <array name="q4_options">
+        <item>@string/q4_option1</item>
+        <item>@string/q4_option2</item>
+    </array>
+
+    <string name="q5_option1">Berkenalan apa adanya</string>
+    <string name="q5_option2">Berusaha membuatnya terkesan</string>
+    <array name="q5_options">
+        <item>@string/q5_option1</item>
+        <item>@string/q5_option2</item>
+    </array>
+
+    <string name="q6_option1">Sibuk</string>
+    <string name="q6_option2">Tidak menyukai keramaian</string>
+    <array name="q6_options">
+        <item>@string/q6_option1</item>
+        <item>@string/q6_option2</item>
+    </array>
+
+    <string name="q7_option1">Berkelahi, kenakalan, dan sikap brutal</string>
+    <string name="q7_option2">Pornografi</string>
+    <array name="q7_options">
+        <item>@string/q7_option1</item>
+        <item>@string/q7_option2</item>
+    </array>
+
+    <string name="q8_option1">Kaki dan tangan</string>
+    <string name="q8_option2">Mata dan jari-jari</string>
+    <array name="q8_options">
+        <item>@string/q8_option1</item>
+        <item>@string/q8_option2</item>
+    </array>
+
+    <string name="q9_option1">Pisau dapur</string>
+    <string name="q9_option2">Pisau buah</string>
+    <array name="q9_options">
+        <item>@string/q9_option1</item>
+        <item>@string/q9_option2</item>
+    </array>
+
+    <string name="q10_option1">Segera mencari dibawah tempat tidur dan melukainya</string>
+    <string name="q10_option2">Menunggu korban keluar, baru kemudian memburunya</string>
+    <array name="q10_options">
+        <item>@string/q10_option1</item>
+        <item>@string/q10_option2</item>
+    </array>
+
+
+</resources>
