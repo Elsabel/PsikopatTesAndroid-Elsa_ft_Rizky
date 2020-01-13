@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import com.example.android.psikopattest_elsa_ft_rizky.data.Options;
 import com.example.android.psikopattest_elsa_ft_rizky.data.Question;
-import com.example.android.psikopattest_elsa_ft_rizky.utils.ResultsAdapter;
+import com.example.android.psikopattest_elsa_ft_rizky.adapter.ResultsAdapter;
 
 import java.util.ArrayList;
 

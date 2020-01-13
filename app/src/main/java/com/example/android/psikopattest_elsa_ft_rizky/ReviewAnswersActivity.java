@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.example.android.psikopattest_elsa_ft_rizky.data.Options;
 import com.example.android.psikopattest_elsa_ft_rizky.data.Question;
-import com.example.android.psikopattest_elsa_ft_rizky.utils.ReviewAnswersAdapter;
+import com.example.android.psikopattest_elsa_ft_rizky.adapter.ReviewAnswersAdapter;
 
 import java.util.ArrayList;
 

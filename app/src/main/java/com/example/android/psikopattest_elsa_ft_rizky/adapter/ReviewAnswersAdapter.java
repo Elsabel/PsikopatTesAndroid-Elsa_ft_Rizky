@@ -1,4 +1,4 @@
-package com.example.android.psikopattest_elsa_ft_rizky.utils;
+package com.example.android.psikopattest_elsa_ft_rizky.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
