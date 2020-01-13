@@ -44,27 +44,18 @@ public class MainActivity extends AppCompatActivity {
     private View optionsView;
     private Toast toast;
 
-    /**
-     * Set up a listener for the next button to display next Question
-     * start a new activity displaying quiz results when all questions are done
-     */
     private View.OnClickListener nextButtonClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
 
-            //save current set answer before displaying the next question
             saveUserAnswer();
 
-            //if the current question is unanswered, alert the user as all questions are mandatory
             if (!answered) {
                 alertQuestionUnanswered();
                 return;
             }
 
-            /*
-            increment the question number and display the next question
-            or display the results if it's the last question after confirming for submission from the user
-             */
+
             qNumber++;
             if (qNumber < questions.size()) {
                 displayQuestion();
@@ -126,7 +117,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //implement the review button click functionality to display the questions marked for review
         ImageButton reviewButton = findViewById(R.id.review_button);
         reviewButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -136,37 +126,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //get all the questions and determine the total number of questions
         questions = QuestionSet.getAllQuestions(this);
         totalQuestions = questions.size();
 
-        //set progress bar max value
+        //set nilai progress bar
         progressBar.setMax(totalQuestions);
 
         displayQuestion();
     }
 
-    /**
-     * Display the questions from the set along with it's options, each question can
-     * have different number of options and different type of views for the inputs
-     */
     private void displayQuestion() {
 
-        //remove previous question and it's corresponding options
         optionsLinearLayout.removeAllViews();
 
-        //update the state of 'mark for review' TextView appropriately
         if (questions.get(qNumber).isMarkedForReview()) {
             reviewTextView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check_box, 0, 0, 0);
         } else {
             reviewTextView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check_box_outline_blank, 0, 0, 0);
         }
 
-        //display the current question number and total number of questions
         String text = (qNumber + 1) + "/" + totalQuestions;
         numOfQuestionsTextView.setText(text);
 
-        //update the progress bar status
+        //update status progress bar
         progressBar.setProgress(qNumber);
 
         if (answered)
@@ -175,7 +157,6 @@ public class MainActivity extends AppCompatActivity {
         Question currentSet = questions.get(qNumber);
         questionTextView.setText(currentSet.getQuestion());
 
-        //set the button for last question to be 'Submit', rather than 'Next'
         if (qNumber == questions.size() - 1) {
             nextButton.setText(R.string.submit);
         } else {
@@ -188,7 +169,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void displayOptions() {
 
-        //get the current question and it's options
         Question question = questions.get(qNumber);
         String[] options = question.getOptions();
         Options currentOptionsType = question.getOptionsType();
@@ -203,7 +183,6 @@ public class MainActivity extends AppCompatActivity {
                 }
                 optionsLinearLayout.addView(radioGroup);
 
-                //restore saved answers
                 if (question.getUserSetAnswerId() != null && question.getUserSetAnswerId().size() > 0) {
                     RadioButton radioButton = (RadioButton) radioGroup.getChildAt(question.getUserSetAnswerId().get(0));
                     radioButton.setChecked(true);
